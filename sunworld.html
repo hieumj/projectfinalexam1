@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SunworldTicket</title>
+	<meta charset="utf-8">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class= "row" style="background-color: #ed0707;color:white;">
+		<div class="col-md-3" >
+			<img src="logo1.png">
+		</div>
+		<div class="col-md-9">
+			<div class="row" style="margin: 5%">
+				<div class="col-0.5">
+					<i class='fas fa-check-circle' style='font-size:30px;color:white;background-color:#ed0707 '></i>
+				</div>
+				<div class-"col-1">
+					<p>Địa điểm ------</p>
+				</div>
+				<div class="col-0.5">
+					<i class='fas fa-ticket-alt' style='font-size:30px;color:white;background-color:yellow '></i>
+				</div>
+				<div class ="col-1.5">
+					<p>Chọn vé ------</p>
+				</div>
+				<div class="col-0.5">
+					<i class='far fa-credit-card' style='font-size:30px;color:white;background-color:#ed0707 '></i>
+				</div>
+				<div class ="col-1.5">
+					<p>Thanh toán ------</p>
+				</div>
+				<div class="col-0.5">
+					<i class='fas fa-clipboard-check' style='font-size:30px;color:white;background-color:#ed0707 '></i>
+				</div>
+				<div class ="col-1.5">
+					<p>Hoàn thành</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-2">
+			<div style='color:blue; font-size: 40px'>Đông Park</div>
+		</div>
+		<div class="col-md-3">
+			<div class="font-weight-bold">Mua vé theo ngày</div>
+		</div>
+		<div class="col-md-3">
+			<form action="/action_page.php">
+  <label for="chọn ngày đi">Chọn ngày đi:</label>
+  <input type="date" id="chọn ngày đi" name="chọn ngày đi">
+</form>
+		</div>
+		<div class="col-md-4" style ='color:red'>
+			<div class="row">
+				<div class="col-md-6">
+				</div>
+				<div class="col-md-4.5"><p class="font-weight-bold">Hỗ trợ: 0886045888</p></div>
+				<div class="col-md-1.5">
+					<i class='fas fa-comment-dots' style='font-size:30px;color:blue;background-color:white '></i>
+				</div>
+				</div>
+			</div>
+		</div>
+	<div class="row" id="product_items">
+		<div class="col-md-3" style="margin: 0px auto; text-align: center; border: 1px solid white;">
+			<img src="tải xuống.jpg" style="height: 80%; width: 100%">
+			<p class="font-weight-bold">Vé Cáp Treo + Công Viên Nước Aquatopia Người Lớn > 1.4m</p>
+			<div class="row">
+				<div class="col-md-5">
+					<p class="font-weight-bold" style='color: red'>380,000 VND</p>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-3.5">
+							<a class="btn btn-minus m-l-5" id="sp1minus">
+								<i class='fas fa-minus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+						<div class="col-md-5">
+							<input class="form-control number ng-pristine ng-valid ng-touched" id="square1" maxlength="2" type="tel">
+						</div>
+						<div class="col-md-3.5" id="sp1plus">
+							<a class="btn btn-plus m-r-5">
+								<i class='fas fa-plus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3" style="margin: 0px auto; text-align: center; border: 1px solid white;">
+			<img src="tải xuống.jpg" style="height: 80%; width: 100%">
+			<p class="font-weight-bold">Vé Cáp Treo + Công Viên Nước Aquatopia Trẻ Em 1m < 1.4m</p>
+			<div class="row">
+				<div class="col-md-5">
+					<p class="font-weight-bold" style='color: red'>285,000 VND</p>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-3.5">
+							<a class="btn btn-minus m-l-5" id="sp2minus">
+								<i class='fas fa-minus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+						<div class="col-md-5">
+							<input class="form-control number ng-pristine ng-valid ng-touched" id="square2" maxlength="2" type="tel">
+						</div>
+						<div class="col-md-3.5">
+							<a class="btn btn-plus m-r-5" id="sp2plus">
+								<i class='fas fa-plus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3" style="margin: 0px auto; text-align: center; border: 1px solid white;">
+			<img src="images (1).jpg" style="height: 80%; width: 100%">
+			<p class="font-weight-bold">Vé Cáp Treo + Công Viên Nước Aquatopia + Buffet Người Lớn > 1.4m</p>
+			<div class="row">
+				<div class="col-md-5">
+					<p class="font-weight-bold" style='color: red'>570,000 VND</p>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-3.5">
+							<a class="btn btn-minus m-l-5" id="sp3minus">
+								<i class='fas fa-minus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+						<div class="col-md-5">
+							<input class="form-control number ng-pristine ng-valid ng-touched" id="square3" maxlength="2" type="tel">
+						</div>
+						<div class="col-md-3.5">
+							<a class="btn btn-plus m-r-5"  id="sp3plus">
+								<i class='fas fa-plus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3" style="margin: 0px auto; text-align: center; border: 1px solid white;">
+			<img src="images (1).jpg" style="height: 80%; width: 100%">
+			<p class="font-weight-bold">Vé Cáp Treo + Công Viên Nước Aquatopia + Buffet Trẻ Em 1m < 1.4m</p>
+			<div class="row">
+				<div class="col-md-5">
+					<p class="font-weight-bold" style='color: red'>380,000 VND</p>
+				</div>
+				<div class="col-md-7">
+					<div class="row">
+						<div class="col-md-3.5">
+							<a class="btn btn-minus m-l-5" id="sp4minus">
+								<i class='fas fa-minus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+						<div class="col-md-5">
+							<input class="form-control number ng-pristine ng-valid ng-touched" id="square4" maxlength="2" type="tel">
+						</div>
+						<div class="col-md-3.5">
+							<a class="btn btn-plus m-r-5" id="sp4plus">
+								<i class='fas fa-plus-circle' style='font-size:30px;color:red'></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		
+
+
+		$("#sp1plus").click(function(){
+			if($('#square1').val() == null || $('#square1').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square1').val())	
+			}
+			
+			if ($('#square1').val()<10) {$('#square1').val(value + 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+		$("#sp1minus").click(function(){
+			if($('#square1').val() == null || $('#square1').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square1').val())	
+			}
+			if ($('#square1').val()>0) {$('#square1').val(value - 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+
+
+
+
+		$("#sp2plus").click(function(){
+			if($('#square2').val() == null || $('#square2').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square2').val())	
+			}
+			
+			if ($('#square2').val()<10) {$('#square2').val(value + 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+		$("#sp2minus").click(function(){
+			if($('#square2').val() == null || $('#square2').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square2').val())	
+			}
+			if ($('#square2').val()>0) {$('#square2').val(value - 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+
+
+
+
+
+
+		$("#sp3plus").click(function(){
+			if($('#square3').val() == null || $('#square3').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square3').val())	
+			}
+			
+			if ($('#square3').val()<10) {$('#square3').val(value + 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+		$("#sp3minus").click(function(){
+			if($('#square3').val() == null || $('#square3').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square3').val())	
+			}
+			if ($('#square3').val()>0) {$('#square3').val(value - 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+
+
+
+
+
+
+		$("#sp4plus").click(function(){
+			if($('#square4').val() == null || $('#square4').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square4').val())	
+			}
+			
+			if ($('#square4').val()<10) {$('#square4').val(value + 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+		$("#sp4minus").click(function(){
+			if($('#square4').val() == null || $('#square4').val() == '') {
+				value = 0
+			} else {
+				value = parseInt($('#square4').val())	
+			}
+			if ($('#square4').val()>0) {$('#square4').val(value - 1)} else {alert('Số lượng vé không hợp lệ')}
+		})
+
+
+		
+
+	</script>
+	
+</body>
+</html>
